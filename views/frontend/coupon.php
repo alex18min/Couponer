@@ -78,8 +78,8 @@
                     <h2 style="font-weight: 700 !important;" class="text-center">ECCO IL TUO COUPON!</h2>
                     <h3 class="text-center">{{currentCouponData.coupon_number}}</h3>
                     <hr>
-                    <p class="text-center">Il coupon è stato inviato alla seguente mail: <strong>{{currentCouponData.email}}</strong>
-                    </p>
+                    <p class="text-center">Il coupon è stato inviato alla seguente mail:</p>
+                    <h4>{{currentCouponData.email}}</h4>
                     <hr>
 
                     <div class="clearfix"></div>
