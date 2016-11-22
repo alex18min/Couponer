@@ -3,7 +3,9 @@
 
 html{
   min-height: 100%;
-
+  .btn{
+    border-radius: 0;
+  }
   body{
 
     background: url("../media/images/background.jpg");
@@ -21,10 +23,25 @@ html{
       margin-top: 15%;
       background: rgba(0,0,0,0.8);
       border-radius: 0;
-
+    
       h1, h2, h3, label, p, small{
         color: @text-white;
       }
+      .form-group{
+
+        .form-control{
+          background: transparent;
+          color: @text-white;
+        }
+        .input-group-addon{
+          font-size: 22px;
+          border: 0;
+          color: @text-white;
+          background: transparent;
+          padding: 6px 12px 6px 0;
+        }
+      }
+
     }
     #CouponSuccess{
 

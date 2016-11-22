@@ -9,17 +9,26 @@
                 </div>
                 <form name="clientForm" novalidate>
                     <div class="form-group col-sm-12 col-lg-6">
-                        <label for="input_coupon_email">Email *</label>
-                        <input id="input_coupon_email" class="form-control" type="email" name="input_coupon_email"
-                               ng-model="coupon.email" required/>
-                        <p ng-show="clientForm.input_coupon_email.$error.email" class="help-block">Formato mail non corretto</p>
+                        <label class="text-uppercase" for="input_coupon_email">Email *</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+                            <input id="input_coupon_email" class="form-control" type="email" name="input_coupon_email"
+                                   ng-model="coupon.email" required/>
+                        </div>
+                        <p ng-show="clientForm.input_coupon_email.$error.email" class="help-block">Formato mail non
+                            corretto</p>
                     </div>
                     <div class="form-group col-sm-12 col-lg-6">
-                        <label for="input_coupon_email_conferma">Conferma Email *</label>
-                        <input id="input_coupon_email_conferma" class="form-control" type="email"
-                               name="input_coupon_email_conferma" ng-model="coupon.email_conferma"
-                               ng-pattern="coupon.cliente_email" required/>
-                        <p ng-show="coupon.email_conferma != coupon.email" class="help-block">Le mail non corrispondono</p>
+                        <label class="text-uppercase" for="input_coupon_email_conferma">Conferma Email *</label>
+
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+                            <input id="input_coupon_email_conferma" class="form-control" type="email"
+                                   name="input_coupon_email_conferma" ng-model="coupon.email_conferma"
+                                   ng-pattern="coupon.cliente_email" required/>
+                        </div>
+                        <p ng-show="coupon.email_conferma != coupon.email" class="help-block">Le mail non
+                            corrispondono</p>
                         <p ng-show="clientForm.input_coupon_email_conferma.$error.email" class="help-block">Formato
                             mail
                             non corretto</p>
@@ -38,7 +47,9 @@
                             <p>
                                 <input ng-model="cliente.cliente_informativa_2" type="checkbox"> <i>Acconsento che i
                                     miei dati personali siano utilizzati dai titolari per le finalità promozionali
-                                    specificate al punto 1 dell' <a class="link-underlined" target="_blank" href="http://zenaispromo.it/gerla/policy.pdf">informativa sulla privacy</a></i>.
+                                    specificate al punto 1 dell' <a class="link-underlined" target="_blank"
+                                                                    href="http://zenaispromo.it/gerla/policy.pdf">informativa
+                                        sulla privacy</a></i>.
                             </p>
                         </div>
                         <small>I campi contrassegnati da * sono obbligatori</small>
@@ -53,7 +64,7 @@
                             ng-disabled="(!cliente.cliente_informativa_1) || (!coupon.email) || (!coupon.email_conferma) || (coupon.email_conferma != coupon.email) || (clientForm.input.$error)"
                             ng-click="saveCoupon()" class="btn btn-success btn-block">
                             Ottieni <img class="next-icon"
-                                              src="media/images/icons/right-arrow-circular-button.png"/>
+                                         src="media/images/icons/right-arrow-circular-button.png"/>
                         </button>
                     </div>
                     <div class="clearfix"></div>

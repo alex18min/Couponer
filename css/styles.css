@@ -1,6 +1,9 @@
 html {
   min-height: 100%;
 }
+html .btn {
+  border-radius: 0;
+}
 html body {
   background: url("../media/images/background.jpg");
   background-position: 50% 50%;
@@ -24,6 +27,17 @@ html body .panel label,
 html body .panel p,
 html body .panel small {
   color: #f2f2f2;
+}
+html body .panel .form-group .form-control {
+  background: transparent;
+  color: #f2f2f2;
+}
+html body .panel .form-group .input-group-addon {
+  font-size: 22px;
+  border: 0;
+  color: #f2f2f2;
+  background: transparent;
+  padding: 6px 12px 6px 0;
 }
 html body #CouponSuccess h3 {
   font-size: 3em;
