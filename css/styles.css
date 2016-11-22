@@ -3,6 +3,7 @@ html {
 }
 html .btn {
   border-radius: 0;
+  font-size: 1.5em;
 }
 html body {
   background: url("../media/images/background.jpg");
@@ -20,19 +21,22 @@ html body .panel {
   background: rgba(0, 0, 0, 0.8);
   border-radius: 0;
 }
-html body .panel h1,
-html body .panel h2,
-html body .panel h3,
-html body .panel label,
-html body .panel p,
-html body .panel small {
+html body .panel .panel-body {
+  padding: 25px;
+}
+html body .panel .panel-body h1,
+html body .panel .panel-body h2,
+html body .panel .panel-body h3,
+html body .panel .panel-body label,
+html body .panel .panel-body p,
+html body .panel .panel-body small {
   color: #f2f2f2;
 }
-html body .panel .form-group .form-control {
+html body .panel .panel-body .form-group .form-control {
   background: transparent;
   color: #f2f2f2;
 }
-html body .panel .form-group .input-group-addon {
+html body .panel .panel-body .form-group .input-group-addon {
   font-size: 22px;
   border: 0;
   color: #f2f2f2;

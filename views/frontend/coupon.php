@@ -8,7 +8,7 @@
                     <hr>
                 </div>
                 <form name="clientForm" novalidate>
-                    <div class="form-group col-sm-12 col-lg-6">
+                    <div class="form-group email-group col-sm-12 col-lg-6">
                         <label class="text-uppercase" for="input_coupon_email">Email *</label>
                         <div class="input-group">
                             <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
@@ -18,7 +18,7 @@
                         <p ng-show="clientForm.input_coupon_email.$error.email" class="help-block">Formato mail non
                             corretto</p>
                     </div>
-                    <div class="form-group col-sm-12 col-lg-6">
+                    <div class="form-group email-group col-sm-12 col-lg-6">
                         <label class="text-uppercase" for="input_coupon_email_conferma">Conferma Email *</label>
 
                         <div class="input-group">
@@ -54,25 +54,19 @@
                         </div>
                         <small>I campi contrassegnati da * sono obbligatori</small>
                     </div>
-                    <div class="col-xs-12 col-md-6">
-                        <button ng-click="clearAllFields()" class="btn btn-warning btn-block">
-                            Reset
-                        </button>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
+
+                    <div class="col-xs-12">
                         <button
                             ng-disabled="(!cliente.cliente_informativa_1) || (!coupon.email) || (!coupon.email_conferma) || (coupon.email_conferma != coupon.email) || (clientForm.input.$error)"
                             ng-click="saveCoupon()" class="btn btn-success btn-block">
-                            Ottieni <img class="next-icon"
+                            RICHIEDI COUPON <img class="next-icon"
                                          src="media/images/icons/right-arrow-circular-button.png"/>
                         </button>
                     </div>
                     <div class="clearfix"></div>
             </div>
             </form>
-            <div ng-if="alertDouble" class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"
-                                                                                aria-hidden="true"></i> Questo email è
-                già stato inserita
+            <div ng-if="alertDouble" class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Questo email è già stato inserita
             </div>
         </div>
         <div class="clearfix"></div>
