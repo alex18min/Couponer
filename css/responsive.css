@@ -1,0 +1,40 @@
+@media screen and (max-width: 1024px) {
+    #Logo {
+        width:20%;
+    }
+
+
+    .upd-button{
+        right: 5%;
+    }
+    body {
+        padding-right: 0px !important;
+        min-height: 100vh;
+    }
+
+    .modal-open {
+        overflow-y: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .upd-button{
+        right: 6%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #Logo {
+        width:40%;
+    }
+    .upd-button, .remove-button{
+        position: relative;
+        width: 50%;
+        right: 0;
+        top: 0;
+        float: left;
+        margin: 1% 0;
+        border:inherit;
+    }
+}
