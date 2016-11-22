@@ -9,18 +9,17 @@
                 </div>
                 <form name="clientForm" novalidate>
                     <div class="form-group col-sm-12 col-lg-6">
-                        <label for="input_coupon.email">Email *</label>
-                        <input id="input_coupon.email" class="form-control" type="email" name="input_coupon.email"
+                        <label for="input_coupon_email">Email *</label>
+                        <input id="input_coupon_email" class="form-control" type="email" name="input_coupon_email"
                                ng-model="coupon.email" required/>
-                        <p ng-show="clientForm.input_coupon.email.$invalid && !clientForm.input_coupon.email.$pristine"
-                           class="help-block">Formato mail non corretto</p>
+                        <p ng-show="clientForm.input_coupon_email.$error.email" class="help-block">Formato mail non corretto</p>
                     </div>
                     <div class="form-group col-sm-12 col-lg-6">
                         <label for="input_coupon_email_conferma">Conferma Email *</label>
                         <input id="input_coupon_email_conferma" class="form-control" type="email"
                                name="input_coupon_email_conferma" ng-model="coupon.email_conferma"
                                ng-pattern="coupon.cliente_email" required/>
-                        <span ng-show="coupon.email_conferma !=coupon.email">Le mail non corrispondono</span>
+                        <p ng-show="coupon.email_conferma != coupon.email" class="help-block">Le mail non corrispondono</p>
                         <p ng-show="clientForm.input_coupon_email_conferma.$error.email" class="help-block">Formato
                             mail
                             non corretto</p>
@@ -30,7 +29,7 @@
                             <p>
                                 <input ng-model="cliente.cliente_informativa_1" type="checkbox"> <i>*Acconsento che i
                                     miei dati personali siano utilizzati con la massima cura e riservatezza dai titolari
-                                    per le finalità indicate nell' <a style="color:#847452" target="_blank"
+                                    per le finalità indicate nell' <a class="link-underlined" target="_blank"
                                                                       href="http://zenaispromo.it/gerla/policy.pdf">informativa
                                         sulla privacy</a> , che dichiaro di aver letto</i>.
                             </p>
@@ -39,9 +38,7 @@
                             <p>
                                 <input ng-model="cliente.cliente_informativa_2" type="checkbox"> <i>Acconsento che i
                                     miei dati personali siano utilizzati dai titolari per le finalità promozionali
-                                    specificate al punto 1 dell' <a style="color:#847452" target="_blank"
-                                                                    href="http://zenaispromo.it/gerla/policy.pdf">informativa
-                                        sulla privacy</a></i>.
+                                    specificate al punto 1 dell' <a class="link-underlined" target="_blank" href="http://zenaispromo.it/gerla/policy.pdf">informativa sulla privacy</a></i>.
                             </p>
                         </div>
                         <small>I campi contrassegnati da * sono obbligatori</small>

@@ -8,6 +8,10 @@ html body {
   background-size: cover;
   min-height: 100%;
 }
+html body .link-underlined {
+  text-decoration: underline;
+  color: #fff;
+}
 html body .panel {
   margin-top: 15%;
   background: rgba(0, 0, 0, 0.8);

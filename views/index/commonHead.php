@@ -11,11 +11,10 @@
     <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="libs/font-awesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/ribbons.css"/>
-    <link rel="stylesheet" type="text/css" href="css/animations.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
     <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
     <!-- FAVICON -->
-    <link rel="icon" type="image/ico" href="media/images/fav/favicon.ico"/>
+    <link rel="icon" type="image/ico" href="http://www.alexcarletto.com/wp-content/uploads/2016/09/favicon.ico"/>
     <!-- JS -->
     <script type="text/javascript" src="libs/jquery/2.0/jquery_2.0.min.js"></script>
     <script type="text/javascript" src="libs/jquery/jquery_ui/jquery.ui.min.js"></script>
