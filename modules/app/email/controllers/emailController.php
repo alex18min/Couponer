@@ -105,7 +105,7 @@ class emailController extends Controller
 <body bgcolor="#fff">
 <table width="600" align="center" style="font-family: 'Open Sans', sans-serif;">
 <tr><td>
-<img style="margin-bottom: 20px;" src="http://www.alexcarletto.com/wp-content/uploads/2016/09/back4.jpg" />
+<img style="margin-bottom: 20px;max-width:100%" src="http://www.alexcarletto.com/couponer/media/images/background.jpg" />
 </td></tr>
 
  <tr><td>
