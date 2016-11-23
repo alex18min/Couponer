@@ -1,1 +1,1 @@
-var core = angular.module('core', ['udpCaptcha', 'ngRoute', 'ngFileUpload']);
+var core = angular.module('core', ['udpCaptcha', 'ngRoute', 'ngFileUpload', 'monospaced.qrcode']);

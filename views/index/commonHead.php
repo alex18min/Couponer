@@ -26,6 +26,9 @@
     <script type="text/javascript" src="libs/angular/ng-file-upload.min.js"></script>
     <script type="text/javascript" src="libs/angular/ng-file-upload-shim.min.js"></script>
 
+    <script type="text/javascript" src="libs/angular/qrcode-generator.js"></script>
+    <script type="text/javascript" src="libs/angular/angular-qr.js"></script>
+
     <!--CDN link for  TweenMax-->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
     <!-- CORE MODULE -->

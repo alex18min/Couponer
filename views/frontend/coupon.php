@@ -60,13 +60,15 @@
                             ng-disabled="(!cliente.cliente_informativa_1) || (!coupon.email) || (!coupon.email_conferma) || (coupon.email_conferma != coupon.email) || (clientForm.input.$error)"
                             ng-click="saveCoupon()" class="btn btn-success btn-block">
                             RICHIEDI COUPON <img class="next-icon"
-                                         src="media/images/icons/right-arrow-circular-button.png"/>
+                                                 src="media/images/icons/right-arrow-circular-button.png"/>
                         </button>
                     </div>
                     <div class="clearfix"></div>
             </div>
             </form>
-            <div ng-if="alertDouble" class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Questo email è già stato inserita
+            <div ng-if="alertDouble" class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"
+                                                                                aria-hidden="true"></i> Questo email è
+                già stato inserita
             </div>
         </div>
         <div class="clearfix"></div>
@@ -81,9 +83,12 @@
                     <h3 class="text-center">{{currentCouponData.coupon_number}}</h3>
                     <hr>
                     <p class="text-center">Il coupon è stato inviato alla seguente mail:</p>
-                    <h4>{{currentCouponData.email}}</h4>
+                    <h4 class="text-center">{{currentCouponData.email}}</h4>
                     <hr>
-
+                    <h4>Ed ecco il tuo QR CODE</h4>
+                    <div class="col-xs-12 text-center">
+                        <qrcode size="250" data="{{currentCouponData.coupon_number}}" download></qrcode>
+                    </div>
                     <div class="clearfix"></div>
                 </div>
             </div>
