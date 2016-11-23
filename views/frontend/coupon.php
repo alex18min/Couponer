@@ -85,9 +85,9 @@
                     <p class="text-center">Il coupon è stato inviato alla seguente mail:</p>
                     <h4 class="text-center">{{currentCouponData.email}}</h4>
                     <hr>
-                    <h4>Ed ecco il tuo QR CODE</h4>
+                    <h4 class="text-center">Ed ecco il tuo QR CODE</h4>
                     <div class="col-xs-12 text-center">
-                        <qrcode size="250" data="{{currentCouponData.coupon_number}}" download></qrcode>
+                        <qrcode class="qrcode" size="250" data="{{currentCouponData.coupon_number}}" download></qrcode>
                     </div>
                     <div class="clearfix"></div>
                 </div>

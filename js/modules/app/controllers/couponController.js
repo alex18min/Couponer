@@ -43,7 +43,6 @@ function couponCtrl($scope, $rootScope, httpServices, $log, $location, $timeout)
                                 $rootScope.loading = false;
                                 $scope.couponSuccessAlert = true;
 
-                                console.log(response.data.result);
                             }
                         }
                         else {
