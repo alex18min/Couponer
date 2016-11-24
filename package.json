@@ -21,7 +21,9 @@
   "homepage": "https://github.com/alex18min/couponer#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "jit-grunt": "^0.10.0"
   }

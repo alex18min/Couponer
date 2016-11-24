@@ -36,11 +36,7 @@
     <script type="text/javascript" src="js/modules/core/http/httpServices.js"></script>
     <!-- APP MODULE -->
     <script type="text/javascript" src="js/modules/app/app.js"></script>
-    <script type="text/javascript" src="js/modules/app/controllers/loginController.js"></script>
-    <script type="text/javascript" src="js/modules/app/controllers/couponController.js"></script>
-    <script type="text/javascript" src="js/modules/app/controllers/excelController.js"></script>
-    <script type="text/javascript" src="js/modules/app/controllers/backendController.js"></script>
-   
+    <script type="text/javascript" src="js/public/controllers.min.js"></script>
 
 </head>
 <body ng-app="app">

@@ -1,8 +1,5 @@
 var app = angular.module('app', ['core']);
 
-/**
- * APP STARTUP
- */
 
 app.run(function ($rootScope, $location, $log, $http, $window) {
 
@@ -14,9 +11,6 @@ app.run(function ($rootScope, $location, $log, $http, $window) {
     $rootScope.currentUser = null;
     $rootScope.section = false;
 
-    /**
-     * CHECK IF USER IS LOGGED BEFORE ACCESSING LOGIN-RESTRICTED AREAS
-     */
 
     $rootScope.$on("$routeChangeStart", function (event, next, current) {
         $rootScope.error = null;
@@ -49,10 +43,6 @@ app.run(function ($rootScope, $location, $log, $http, $window) {
         var cookieChecker = checkCookie();
     });
 
-    /**
-     * LOGOUT
-     */
-
     $rootScope.logout = function () {
         $rootScope.loggedUser = null;
         $location.path("/login");
@@ -68,11 +58,6 @@ app.run(function ($rootScope, $location, $log, $http, $window) {
 
 });
 
-
-
-/**
- * APP ROUTING
- */
 
 app.config(function ($routeProvider) {
     $routeProvider

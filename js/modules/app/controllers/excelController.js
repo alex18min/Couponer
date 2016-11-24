@@ -2,12 +2,6 @@ app.controller('excelCtrl', ['$scope', 'Upload', excelCtrl]);
 
 function excelCtrl($scope, Upload) {
 
-    /**
-     * EXPORT EXCEL
-     * @param element
-     * @param filename
-     */
-
     $scope.exportExcel = function (element, filename) {
 
         var today = new Date();
